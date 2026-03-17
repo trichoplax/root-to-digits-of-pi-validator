@@ -1,4 +1,4 @@
-# Root to digits of pi validator (under construction)
+# Root to digits of pi validator
 
 A validator for entries to a [coding challenge on Code Golf Codidact](https://codegolf.codidact.com/posts/).
 

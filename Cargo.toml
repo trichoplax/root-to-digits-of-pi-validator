@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+bigdecimal = "0.4.10"
 wasm-bindgen = "0.2.114"
 
 [lib]
