@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+        <title>Root to digits of pi validator</title>
+    </head>
+    <body>
+        <script type="module">
+            import init, {
+                score_integer,
+            } from "./root_to_digits_of_pi_validator.js";
+            const run = async () => {
+                await init();
+                document.getElementById("validate_button").onclick = () => {
+                    let candidate =
+                        document.getElementById("string_input").value;
+                    let outcome = score_integer(candidate);
+                    let destination =
+                        document.getElementById("outcome_section");
+                    destination.innerHTML = outcome;
+                };
+            };
+            run();
+        </script>
+        <h1>Root to digits of pi validator (under construction)</h1>
+        <h2>Integer to be validated</h2>
+        <textarea
+            autofocus
+            id="string_input"
+            rows="2"
+            cols="40"
+            placeholder="Paste integer here."
+        ></textarea>
+        <br />
+        <button id="validate_button">Calculate score</button>
+        <h2>Outcome</h2>
+        <div id="outcome_section">
+            Press "Calculate score" to see the outcome
+        </div>
+        <hr />
+        <a
+            href="https://github.com/trichoplax/root-to-digits-of-pi-validator"
+            target="_blank"
+            title="View the source code on GitHub"
+        >
+            Source code (opens in new tab)
+        </a>
+    </body>
+</html>
